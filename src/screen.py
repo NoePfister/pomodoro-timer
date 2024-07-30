@@ -8,7 +8,7 @@ class Screen:
     def __init__(self, program) -> None:
         from program import Program
         self.program: Program = program
-
+ 
     def start_loop(self) -> None:
         pass
 

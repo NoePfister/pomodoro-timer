@@ -5,7 +5,7 @@ Pomodoro timer is a method to use your time as effectiv as possible by using int
 Features
 ----------
 ## Neccesary
-- [ ] Start/Cancel Pomodoros (25 min)
+- [x] Start/Cancel Pomodoros (25 min)
 - [ ] Short break timer (5 min)
 - [ ] Long break timer (15-30 min; after completing a set of pomodoros [4])
 

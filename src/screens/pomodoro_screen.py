@@ -15,6 +15,7 @@ class PomodoroScreen(Screen):
 
     def start_loop(self) -> None:
         self.start_time = int(time.time())
+        self.update_remaining()
         while True:
             # Check if time is up
             if self.start_time + self.DURATION < int(time.time()):
