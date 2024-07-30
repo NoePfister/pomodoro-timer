@@ -35,3 +35,12 @@ class Screen:
     def wait_for_input() -> bytes:
         """Wait for key input and return it."""
         return msvcrt.getch()
+
+
+    @staticmethod
+    def check_input() -> bool:
+        return msvcrt.kbhit()
+
+    @staticmethod
+    def format_time(seconds: int) -> str:
+        return utils.format_time(seconds)
