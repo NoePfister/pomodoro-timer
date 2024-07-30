@@ -1,12 +1,13 @@
 Pomodoro Timer
 -------------------------
+Pomodoro timer is a method to use your time as effectiv as possible by using intervalls.
 
-
-# Features
+Features
+----------
 ## Neccesary
 - [ ] Start/Cancel Pomodoros (25 min)
 - [ ] Short break timer (5 min)
-- [ ] Long break timer (1-30 min; after completing a set of pomodoros [4])
+- [ ] Long break timer (15-30 min; after completing a set of pomodoros [4])
 
 ## Important
 - [ ] Customizable Pomodoro duration
@@ -17,3 +18,6 @@ Pomodoro Timer
 - [ ] Progress tracking
 - [ ] Alerts and notifications if finished
 - [ ] Export saved data
+
+
+

@@ -1,5 +1,3 @@
-import sys
-
 from screen import Screen
 
 
@@ -8,21 +6,21 @@ class Menu(Screen):
     def start_loop(self) -> None:
         while True:
             self.clear()
-            self.print_menu()
+            self.print_screen()
             key: bytes = self.wait_for_input()
             match key:
-                case '1':
-                    self.program.screens["pomodoro_menu"].start_loop()
-                case '2':
-                    self.program.screens["short_break_menu"].start_loop()
-                case '3':
-                    self.program.screens["long_break_menu"].start_loop()
-                case '4':
-                    sys.exit()
+                case b'1':
+                    self.change_screen("pomodoro_menu")
+                case b'2':
+                    self.change_screen("short_break_menu")
+                case b'3':
+                    self.change_screen("long_break_menu")
+                case b'4':
+                    self.exit()
                 case _:
                     continue
 
-    def print_menu(self) -> None:
+    def print_screen(self) -> None:
         print("POMODORO TIMER \n" +
               "Use __Your Time__ more effectivly! \n" +
               "Options: \n" +

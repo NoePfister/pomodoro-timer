@@ -1,8 +1,10 @@
 from program import Program
 
-def main():
-    program = Program()
+
+def main() -> None:
+    program: Program = Program()
     program.start_program()
 
 
-main()
+if __name__ == "__main__":
+    main()
